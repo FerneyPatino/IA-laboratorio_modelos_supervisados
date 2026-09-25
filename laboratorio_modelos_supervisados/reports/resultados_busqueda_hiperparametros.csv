@@ -1,0 +1,5 @@
+modelo,mejores_parametros,cv_pr_auc_media,cv_pr_auc_std,cv_f1_media,cv_recall_media,segundos_busqueda
+SVM,"{'modelo__C': np.float64(83.41930294140772), 'modelo__class_weight': None, 'modelo__gamma': np.float64(0.023345864076016236)}",0.6879949658398554,0.09573314722741463,0.5138762416760692,0.37926829268292683,173.680330991745
+Arbol de decision,"{'modelo__class_weight': None, 'modelo__max_depth': None, 'modelo__min_samples_leaf': 18, 'modelo__min_samples_split': 5}",0.6557809044216945,0.08216701255668318,0.5938970184744833,0.5181707317073171,6.032792091369629
+Random Forest,"{'modelo__class_weight': None, 'modelo__max_depth': 12, 'modelo__max_features': 0.5, 'modelo__min_samples_leaf': 5, 'modelo__n_estimators': 266}",0.7625008739644712,0.06764250936261886,0.6547711857656201,0.5276829268292682,135.2335433959961
+Gradient Boosting,"{'modelo__learning_rate': np.float64(0.02545642421255076), 'modelo__max_depth': 4, 'modelo__min_samples_leaf': 1, 'modelo__n_estimators': 326, 'modelo__subsample': np.float64(0.6478376983753207)}",0.7896132428292338,0.05327691499154697,0.6933845497225779,0.5915853658536585,146.39270091056824

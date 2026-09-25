@@ -1,0 +1,4 @@
+variable,formula,unidad,interpretacion,razon
+Diferencia_temperatura,Process temperature [K] - Air temperature [K],K,Calentamiento del proceso sobre el ambiente,Diferencias pequeñas se asocian a fallas por disipacion de calor (HDF)
+Potencia_mecanica_W,Torque [Nm] * Rotational speed [rpm] * (2*pi/60),W,Potencia mecanica aproximada entregada por el eje,Potencias muy bajas o muy altas se asocian a fallas de potencia (PWF)
+Desgaste_torque,Tool wear [min] * Torque [Nm],min*Nm,Esfuerzo acumulado sobre la herramienta,Aproxima el criterio de sobreesfuerzo (OSF)

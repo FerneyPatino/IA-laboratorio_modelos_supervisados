@@ -1,0 +1,2 @@
+modelo,usa_variables_derivadas,umbral,accuracy,balanced_accuracy,precision,recall,f1,ROC_AUC,PR_AUC,FP,FN,costo_operativo
+Random Forest,True,0.1,0.9765,0.9310833028863719,0.6060606060606061,0.8823529411764706,0.718562874251497,0.9767537449762514,0.8969819540651784,39,8,119

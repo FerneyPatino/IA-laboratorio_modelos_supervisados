@@ -1,0 +1,15 @@
+variable,rol_propuesto,usar_como_predictor,justificacion
+UDI,Identificador,No,Índice secuencial de fila sin significado físico; el modelo podría memorizar posiciones y no generalizaría.
+Product ID,Identificador,No,Identificador único de alta cardinalidad; su letra inicial ya está en Type y el resto es un número de serie sin información causal.
+Type,Predictor válido (categórico),Sí,"Calidad del producto (L/M/H), conocida antes de la operación; puede modular la tolerancia a la carga."
+Air temperature [K],Predictor válido (numérico),Sí,Medición de sensor previa al evento de falla.
+Process temperature [K],Predictor válido (numérico),Sí,Medición de sensor; permite construir la diferencia de temperatura con el ambiente.
+Rotational speed [rpm],Predictor válido (numérico),Sí,Medición de sensor; junto con el torque determina la potencia mecánica.
+Torque [Nm],Predictor válido (numérico),Sí,Medición de sensor; indicador de sobrecarga.
+Tool wear [min],Predictor válido (numérico),Sí,Tiempo acumulado de uso de la herramienta; indicador de desgaste conocido antes de la falla.
+Machine failure,Variable objetivo,No,"Es la etiqueta a predecir (0 = sin falla, 1 = falla)."
+TWF,Fuga de información,No,Falla por desgaste de herramienta: es un subtipo del evento a predecir. Su valor 1 implica Machine failure = 1.
+HDF,Fuga de información,No,"Falla por disipación de calor: subtipo del evento objetivo, registrado después de ocurrida la falla."
+PWF,Fuga de información,No,Falla de potencia: subtipo del evento objetivo.
+OSF,Fuga de información,No,Falla por sobreesfuerzo: subtipo del evento objetivo.
+RNF,Fuga de información,No,Falla aleatoria: subtipo del evento objetivo; además es ruido por definición (no depende de las mediciones).
